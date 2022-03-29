@@ -5,9 +5,9 @@ const PALABRA = "ser/estar nacer golpear convertir comenzar doblar morder soplar
 var index = 0;
 
 function verificar() {
-    let past = document.getElementById("pasado").value;
-    let particip = document.getElementById("participio").value;
-    let infi = document.getElementById("infinitivo").value;
+    let past = (document.getElementById("pasado").value).toLowerCase();
+    let particip = (document.getElementById("participio").value).toLowerCase();
+    let infi = (document.getElementById("infinitivo").value).toLowerCase();
 
     if (infi != INFINITIVO[index]) {
         document.getElementById("errorInf").innerText="Error en el infinitivo, deberia ser: "+INFINITIVO[index];
