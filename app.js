@@ -28,7 +28,7 @@ function verificar() {
 }
 
 function random() {
-    index = Math.floor(Math.random() * 99);
+    index = Math.floor(Math.random() * 98);
     document.getElementById("palabra").innerText = PALABRA[index];
 }
 
